@@ -1,0 +1,767 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/custom.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>ANIMATIONS</h1>
+					<h3>CSS Tricks</h3>
+				</section>
+
+				<section>
+					<h2>What is a CSS3 animation?</h2>
+					<!--<p><small>
+						An animation lets an element gradually change from one style to another.
+					</small></p>
+					<p><small>
+						You can change as many CSS properties you want, as many times you want.
+					</small></p>-->
+				</section>
+
+				<section>
+					<h2>The @keyframes Rule</h2>
+					<p><small>When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.</small></p>
+	  				<pre><code>
+	/* The animation code */
+	
+	@keyframes example {
+	    from {background-color: red;}
+	    to {background-color: yellow;}
+	}
+
+	/* The element to apply the animation to */
+
+	div.squareanim {
+	    width: 200px;
+	    height: 200px;
+	    margin:0 auto;
+	    animation-name: example;
+	    animation-duration: 4s;
+	    animation-iteration-count: infinite;
+	}
+
+	  				</code></pre>
+				</section>
+
+				<section class="animation1" data-transition="zoom">
+				<div class="squareanim"></div>
+				</section>
+				
+		        <section data-transition="fade">
+		            <section>Too simple, isn't it?</section>
+		        </section>
+			
+				<section class="website-reference" id="wbref" data-transition="slide">
+					
+					<header class="section">
+			
+						<!-- container -->
+						<div class="container">
+							<h1>Website Title</h1>
+							<p class="hide-small">Website slogan included here.</p>
+
+							<nav class="site-nav">
+								<ul class="group">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Portfolio</a></li>
+									<li class="hide-small"><a href="#">FAQs</a></li>
+									<li class="hide-small"><a href="#">Links</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div><!-- /container -->
+						
+					</header>
+					
+					<div class="content-area group section">
+						
+						<!-- container -->
+						<div class="container">
+							
+							<!-- row -->
+							<div class="row">
+								
+								<!-- col -->
+								<div class="col col-md-8 push-down-sm">
+									
+									<h2>Welcome to the page!</h2>
+										
+									<!-- row -->
+									<div class="row boxes">
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-c">
+												<p>Key feature 1</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-c">
+												<p>Key feature 2</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-c">
+												<p>Key feature 3</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-c">
+												<p>Key feature 4</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+									</div><!-- /row -->
+															
+									
+								</div><!-- /col -->
+								
+								<!-- col -->
+								<div class="col col-md-4 sidebar">
+									<img src="http://pngimg.com/upload/star_PNG1592.png" class="star2">
+								</div><!-- /col -->
+								
+							</div><!-- /row -->
+							
+						</div><!-- /container -->
+						
+					</div>
+
+					<footer>
+						<p>&copy; 2014 - This is the footer.</p>
+					</footer>
+				</section>
+
+				<section>
+					<h2>Let's take a look at the code</h2>
+					<pre><code>
+		/* The animation code */
+		
+		@keyframes fadeBounce {
+
+			0% {
+				opacity:0;
+				transform:translateY(-200%);
+			}
+
+			40% {
+				transform:translateY(0);
+			}
+
+			55% {
+				transform: translateY(-6px);
+			}
+
+			70% {
+				opacity:1;
+				transform: translateY(0);
+			}
+
+			85% {
+				transform:translateY(-3px);
+			}
+
+			100% {
+				opacity:1;
+				transform:translateY(0);
+			}
+
+		}
+
+		/* The element to apply the animation to */
+
+		.box-a {
+			opacity: 0;
+			animation-name: fadeBounce;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			background-color: #e7eff5;
+			padding: 20px 20px 0 20px;
+			border: 2px solid #d3dee7;
+			margin-bottom: 30px;
+			box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+			border-radius: 10px;
+		}
+
+		section.website-reference .boxes :nth-child(2) .box-a {
+			animation-delay: .5s;
+		}
+
+		section.website-reference .boxes :nth-child(3) .box-a {
+			animation-delay: 1s;
+		}
+
+		section.website-reference .boxes :nth-child(4) .box-a {
+			animation-delay: 1.5s;
+		}</code></pre>
+				</section>
+				
+				<section id="simple" data-transition="fade">
+					<section><p>Make it simple</p></section>
+				</section>
+
+				<section id="start">
+					<section>
+					<pre><code>
+				animation: fadeBounce 1s forwards;
+				-webkit-animation: fadeBounce 1s forwards;
+					</code>
+					</pre></section>
+				</section>
+
+				<section data-transition="fade">
+					<p>LET'S CHANGE THE DURATION</p>
+				</section>
+
+				<section class="website-reference" id="wbref2" data-transition="slide">
+					
+					<header class="section">
+			
+						<!-- container -->
+						<div class="container">
+							<h1>Website Title</h1>
+							<p class="hide-small">Website slogan included here.</p>
+
+							<nav class="site-nav">
+								<ul class="group">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Portfolio</a></li>
+									<li class="hide-small"><a href="#">FAQs</a></li>
+									<li class="hide-small"><a href="#">Links</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div><!-- /container -->
+						
+					</header>
+					
+					<div class="content-area group section">
+						
+						<!-- container -->
+						<div class="container">
+							
+							<!-- row -->
+							<div class="row">
+								
+								<!-- col -->
+								<div class="col col-md-8 push-down-sm">
+									
+									<h2>Welcome to the page!</h2>
+										
+									<!-- row -->
+									<div class="row boxes">
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-d">
+												<p>Key feature 1</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-d">
+												<p>Key feature 2</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-d">
+												<p>Key feature 3</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-d">
+												<p>Key feature 4</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+									</div><!-- /row -->
+															
+									
+								</div><!-- /col -->
+								
+								<!-- col -->
+								<div class="col col-md-4 sidebar">
+									<img src="http://pngimg.com/upload/star_PNG1592.png" class="star2">
+								</div><!-- /col -->
+								
+							</div><!-- /row -->
+							
+						</div><!-- /container -->
+						
+					</div>
+
+					<footer>
+						<p>&copy; 2014 - This is the footer.</p>
+					</footer>
+				</section>
+				
+				<section id="start">
+					<section>
+					<pre><code>
+				animation: fadeBounce 5s forwards;
+				-webkit-animation: fadeBounce 5s forwards;
+					</code>
+					</pre></section>
+				</section>
+
+				<section class="website-reference" id="wbref3" data-transition="slide">
+					
+					<header class="section">
+			
+						<!-- container -->
+						<div class="container">
+							<h1>Website Title</h1>
+							<p class="hide-small">Website slogan included here.</p>
+
+							<nav class="site-nav">
+								<ul class="group">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Portfolio</a></li>
+									<li class="hide-small"><a href="#">FAQs</a></li>
+									<li class="hide-small"><a href="#">Links</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</nav>
+						</div><!-- /container -->
+						
+					</header>
+		
+					<div class="content-area group section">
+						
+						<!-- container -->
+						<div class="container">
+							
+							<!-- row -->
+							<div class="row">
+								
+								<!-- col -->
+								<div class="col col-md-8 push-down-sm">
+									
+									<h2>Welcome to the page!</h2>
+										
+									<!-- row -->
+									<div class="row boxes">
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-a">
+												<p>Key feature 1</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-a">
+												<p>Key feature 2</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-a">
+												<p>Key feature 3</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+										<!-- col -->
+										<div class="col col-sm-6 col-lg-3">
+											<!-- box-a -->
+											<div class="box-a">
+												<p>Key feature 4</p>
+											</div><!-- /box-a -->
+										</div><!-- /col -->
+										
+									</div><!-- /row -->
+															
+									
+								</div><!-- /col -->
+								
+								<!-- col -->
+								<div class="col col-md-4 sidebar">
+									<img src="http://pngimg.com/upload/star_PNG1592.png" class="star2">
+								</div><!-- /col -->
+								
+							</div><!-- /row -->
+							
+						</div><!-- /container -->
+						
+					</div>
+
+					<footer>
+						<p>&copy; 2014 - This is the footer.</p>
+					</footer>
+				</section>
+
+				<section id="simple2">
+					<p>I just added these 2 lines to all the boxes</p>
+					<pre><code>
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+					</code>
+					</pre>
+				</section>
+
+				<section id="simple3">
+					<p>So easy!</p>
+					<pre><code>
+		animation: fadeBounce 1s infinite alternate forwards;
+		-webkit-animation: fadeBounce 1s infinite alternate forwards;
+					</code>
+					</pre>
+				</section>
+				
+				<section class="website-reference" id="wbref4" data-transition="slide">
+							
+					<header class="section">
+			
+					<!-- container -->
+					<div class="container">
+						<h1>Website Title</h1>
+						<p class="hide-small">Website slogan included here.</p>
+
+						<nav class="site-nav">
+							<ul class="group">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li class="hide-small"><a href="#">FAQs</a></li>
+								<li class="hide-small"><a href="#">Links</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div><!-- /container -->
+					
+				</header>
+
+				<div class="content-area group section">
+					
+					<!-- container -->
+					<div class="container">
+						
+						<!-- row -->
+						<div class="row">
+							
+							<!-- col -->
+							<div class="col col-md-8 push-down-sm">
+								
+								<h2>Welcome to the page!</h2>
+									
+								<!-- row -->
+								<div class="row boxes">
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-e">
+											<p>Key feature 1</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-e">
+											<p>Key feature 2</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-e">
+											<p>Key feature 3</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-e">
+											<p>Key feature 4</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+								</div><!-- /row -->
+														
+								
+							</div><!-- /col -->
+							
+							<!-- col -->
+							<div class="col col-md-4 sidebar">
+								<img src="http://pngimg.com/upload/star_PNG1592.png" class="star3">
+							</div><!-- /col -->
+							
+						</div><!-- /row -->
+						
+					</div><!-- /container -->
+					
+				</div>
+
+				<footer>
+					<p>&copy; 2014 - This is the footer.</p>
+				</footer>
+				</section>
+				
+				<section id="simple4">
+					<h2>She's moving</h2>
+					<pre><code>
+		/* The animation code */
+
+		@keyframes slideSpintwo {
+
+			100%{
+				transform: translateX(300%);
+			}
+
+		}
+		
+		/* The element to apply the animation to */
+
+		section.website-reference .star3 {
+			animation: slideSpintwo 2s;
+			-webkit-animation: slideSpintwo 2s;
+		}
+					</code>
+					</pre>
+				</section>
+
+				<section class="website-reference" id="wbref5" data-transition="slide">
+							
+					<header class="section">
+			
+					<!-- container -->
+					<div class="container">
+						<h1>Website Title</h1>
+						<p class="hide-small">Website slogan included here.</p>
+
+						<nav class="site-nav">
+							<ul class="group">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Portfolio</a></li>
+								<li class="hide-small"><a href="#">FAQs</a></li>
+								<li class="hide-small"><a href="#">Links</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div><!-- /container -->
+					
+				</header>
+
+				<div class="content-area group section">
+					
+					<!-- container -->
+					<div class="container">
+						
+						<!-- row -->
+						<div class="row">
+							
+							<!-- col -->
+							<div class="col col-md-8 push-down-sm">
+								
+								<h2>Welcome to the page!</h2>
+									
+								<!-- row -->
+								<div class="row boxes">
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-c">
+											<p>Key feature 1</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-c">
+											<p>Key feature 2</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-c">
+											<p>Key feature 3</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+									<!-- col -->
+									<div class="col col-sm-6 col-lg-3">
+										<!-- box-a -->
+										<div class="box-c">
+											<p>Key feature 4</p>
+										</div><!-- /box-a -->
+									</div><!-- /col -->
+									
+								</div><!-- /row -->
+														
+								
+							</div><!-- /col -->
+							
+							<!-- col -->
+							<div class="col col-md-4 sidebar">
+								<img src="http://pngimg.com/upload/star_PNG1592.png" class="star">
+							</div><!-- /col -->
+							
+						</div><!-- /row -->
+						
+					</div><!-- /container -->
+					
+				</div>
+
+				<footer>
+					<p>&copy; 2014 - This is the footer.</p>
+				</footer>
+				</section>
+
+				<section>
+					<h2>FINAL CODE</h2>
+						<pre><code>
+	/* The animation code */
+	
+	@keyframes slideSpin {
+
+		50%{
+			transform: translateX(150%) scale(.5);
+		}
+		
+		75% {
+			transform: translateX(150%) rotate(180deg) scale(.5);
+		}
+
+		100%{
+			transform: translateX(300%) rotate(180deg);
+		}
+
+	}
+	
+	/* The element to apply the animation to */
+	
+	.star {
+		-webkit-animation: slideSpin 2s infinite alternate forwards;
+		animation: slideSpin 2s infinite alternate forwards;
+		width: 25%;
+		height: auto;
+	}						</code></pre>
+					
+				</section>
+
+				<section data-markdown data-transition="fade">
+					<script type="text/template">
+				<h3>What about other websites?</h3>
+				[technics.com](http://www.technics.com/global/)
+				[withgoogle.com](https://chekhov.withgoogle.com/alive)
+				[world.com](http://acme-world.com/)
+					</script>
+				</section>
+
+				<section data-markdown data-transition="fade">
+		    		<script type="text/template">
+				<h3>TIME FOR A QUIZ</h3>
+				[kahoot](https://play.kahoot.it/#/?quizId=da5c84b0-fb0b-48f3-b110-2e3b27649892)
+					</script>
+				</section>
+
+				<section data-transition="fade">
+			 		<h1>END</h1>
+				</section>
+
+			</div><!-- Slides -->
+		</div> <!-- Reveal -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/custom.js"></script>
+
+		<script>
+
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'default', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+		</script>
+
+	</body>
+</html>

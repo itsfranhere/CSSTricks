@@ -1,0 +1,622 @@
+
+/* Adjustments */
+.reveal p {
+	margin: 10px 0;
+}
+
+/* Main Column Typography */
+section.website-reference .main-area h2 {
+	font-size: 165%;
+	font-weight: normal;
+}
+
+section.website-reference .section {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+section.website-reference .container {
+	max-width:960px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+	
+	section.website-reference body {
+		font-size: 16px;
+	}
+	
+	section.website-reference .container {
+		max-width: 1200px;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	section.website-reference .section {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+}
+
+section.website-reference header {
+	padding-top: 20px;
+	color: #FFF;
+	background-color: #405c71;
+}
+
+section.website-reference header h1 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 165%;
+}
+
+section.website-reference header p {
+	font-size: 90%;
+	margin: 0;
+}
+
+/* Site Navigation */
+section.website-reference .site-nav {
+	margin-top: 20px;
+}
+
+section.website-reference .site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+section.website-reference .site-nav li {
+	list-style: none;
+	float: left;
+	margin-right: 5px;
+}
+
+section.website-reference .site-nav a {
+	display: block;
+	color: #FFF;
+	padding: 10px 20px;
+	background-color: #365267;
+	transition-property: color, background-color;
+	transition-duration: 2s;
+}
+
+section.website-reference .site-nav a:hover {
+	background-color: #FFF;
+	color: #2c465a;
+}
+
+@media screen and (max-width: 1023px) {
+	
+	section.website-reference .site-nav li {
+		width: 33.332%;
+		margin-right: 0;
+	}
+	
+	section.website-reference .site-nav a {
+		padding: 15px 0;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+	section.website-reference .site-nav li {
+		width: 50%;
+	}
+	
+}
+
+
+
+/* End Site Navigation */
+
+
+section.website-reference .content-area {
+	background-color: #FFF;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+	section.website-reference .content-area {
+		padding-top: 20px;
+	}
+}
+
+section.website-reference .main-area {
+	width: 66%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+section.website-reference .sidebar {
+	color: #555;
+	font-size: 85%;
+}
+
+section.website-reference .sidebar h3 {
+	font-size: 138.5%;
+	margin-bottom: 7px;
+}
+
+section.website-reference .info-box {
+	background-color: #efeedb;
+	border: 5px solid #e6e5c2;
+	padding: 20px 40px 7px 40px;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+	
+	section.website-reference .hide-small {
+		display: none;
+	}
+	
+}
+
+.section.animation1 {
+	width:960px;
+	text-align:center;
+}
+
+/* Website Reference */
+
+section.website-reference.website-reference.present {
+	top:-60px !important;
+}
+
+.reveal .slides :nth-child(6), .reveal .slides :nth-child(16), .reveal .slides :nth-child(16), .reveal .slides :nth-child(18) {
+	text-align:initial !important;
+}
+
+.reveal section img {
+	box-shadow:none !important;
+}
+
+section.website-reference > .reveal.center, .reveal.center .slides, .reveal.center .slides section {
+	min-width: 100% !important;
+}
+
+section.website-reference h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+}
+
+section.website-reference img {
+	max-width: 100%;
+	height: auto;
+}
+
+section.website-reference a {
+	text-decoration: none;
+}
+
+/* Animation Square 1 */
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div.squareanim {
+    width: 200px;
+    height: 200px;
+    margin:0 auto;
+    -webkit-animation: example 3s infinite;
+    animation: example 3s infinite;
+}
+
+
+/* Animation Square 2 */
+
+/*div.squareanim2 {
+	text-align: center;
+	background-color: #blue;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 40px;
+	border-radius: 50%;
+}
+
+section.website-reference .squareanim2:hover {
+	transform: rotate(360deg);
+}*/
+
+/* Bounce Animation */
+
+@-webkit-keyframes fadeBounce {
+	0% {
+		opacity:0;
+		transform:translateY(-200%);
+	}
+
+	40% {
+		opacity:1;
+		transform:translateY(0);
+	}
+
+	55% {
+		transform: translateY(-6px);
+	}
+
+	70% {
+		transform: translateY(0);
+	}
+
+	85% {
+		transform:translateY(-3px);
+	}
+
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+
+}
+
+@keyframes fadeBounce {
+	0% {
+		opacity:0;
+		transform:translateY(-200%);
+	}
+
+	40% {
+		transform:translateY(0);
+	}
+
+	55% {
+		transform: translateY(-6px);
+	}
+
+	70% {
+		opacity:1;
+		transform: translateY(0);
+	}
+
+	85% {
+		transform:translateY(-3px);
+	}
+
+	100% {
+		opacity:1;
+		transform:translateY(0);
+	}
+
+}
+
+/* End Bounce Animation */
+
+
+/* Boxes a */
+
+section.website-reference .box-a {
+	opacity: 0;
+	animation: fadeBounce 1s infinite alternate forwards;
+	-webkit-animation: fadeBounce 1s infinite alternate forwards;
+	background-color: #e7eff5;
+	padding: 20px 20px 0 20px;
+	border: 2px solid #d3dee7;
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+	border-radius: 10px;
+}
+
+section.website-reference .boxes :nth-child(2) .box-a {
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+
+section.website-reference .boxes :nth-child(3) .box-a {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+section.website-reference .boxes :nth-child(4) .box-a {
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+
+/* Boxes c */
+
+section.website-reference .box-c {
+	opacity:0;
+	animation: fadeBounce 1s forwards;
+	-webkit-animation: fadeBounce 1s forwards;
+	background-color: #e7eff5;
+	padding: 20px 20px 0 20px;
+	border: 2px solid #d3dee7;
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+	border-radius: 10px;
+}
+
+section.website-reference .boxes :nth-child(2) .box-c {
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+
+section.website-reference .boxes :nth-child(3) .box-c {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+section.website-reference .boxes :nth-child(4) .box-c {
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+
+/* Boxes d */
+
+section.website-reference .box-d {
+	opacity:0;
+	animation: fadeBounce 5s forwards;
+	-webkit-animation: fadeBounce 5s forwards;
+	background-color: #e7eff5;
+	padding: 20px 20px 0 20px;
+	border: 2px solid #d3dee7;
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+	border-radius: 10px;
+}
+
+section.website-reference .boxes :nth-child(2) .box-d {
+	animation-delay: .5s;
+	-webkit-animation-delay: .5s;
+}
+
+section.website-reference .boxes :nth-child(3) .box-d {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+section.website-reference .boxes :nth-child(4) .box-d {
+	animation-delay: 1.5s;
+	-webkit-animation-delay: 1.5s;
+}
+
+
+/* Boxes e */
+
+section.website-reference .box-e {
+	background-color: #e7eff5;
+	padding: 20px 20px 0 20px;
+	border: 2px solid #d3dee7;
+	margin-bottom: 30px;
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, .10);
+	border-radius: 10px;
+}
+
+section.website-reference .star2 {
+	width:25%;
+}
+
+/* Star Animation slideSpintwo */
+@-webkit-keyframes slideSpintwo {
+	
+	100%{
+		transform: translateX(300%) rotate(180deg);
+	}
+
+}
+
+@keyframes slideSpin {
+	
+	100%{
+		transform: translateX(300%);
+	}
+}
+
+section.website-reference .star3 {
+	-webkit-animation: slideSpintwo 2s;
+	animation: slideSpintwo 2s;
+	width:25%;
+}
+
+/* Star Animation slideSpin */
+@-webkit-keyframes slideSpin {
+	
+	50%{
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+
+	100%{
+		transform: translateX(300%) rotate(180deg);
+	}
+
+}
+
+@keyframes slideSpin {
+	
+	50%{
+		transform: translateX(150%) scale(.5);
+	}
+	
+	75% {
+		transform: translateX(150%) rotate(180deg) scale(.5);
+	}
+
+	100%{
+		transform: translateX(300%) rotate(180deg);
+	}
+}
+
+section.website-reference .star {
+	-webkit-animation: slideSpin 2s infinite alternate forwards;
+	animation: slideSpin 2s infinite alternate forwards;
+	width: 25%;
+	height: auto;
+}
+
+/* Simple Section */
+
+#simple p {
+	text-align:center;
+}
+
+/* Banner Overlay */
+section.website-reference .image-banner {
+	position: relative;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+section.website-reference .image-banner img {
+	display: block;
+	transition: all 2s;
+}
+
+section.website-reference .image-banner:hover img {
+	transform: scale(1.5);
+}
+
+section.website-reference .banner-description {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, .65);
+	padding: 15px 25px;
+	opacity: 0;
+	transition-property: all;
+	transition-duration: 1s;
+	transform: translateY(100%);
+}
+
+section.website-reference .image-banner:hover .banner-description {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media screen and (max-width: 767px) {
+	section.website-reference .box-a {
+		margin-bottom: 15px;
+	}
+}
+
+/* Grid */
+section.website-reference .row {
+	margin-right: -20px;
+}
+
+section.website-reference .col {
+	width: 100%;
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+section.website-reference .col-xs-11 {width: 91.662%}
+section.website-reference .col-xs-10 {width: 83.332%;}
+section.website-reference .col-xs-9 {width: 75%;}
+section.website-reference .col-xs-8 {width: 66.662%;}
+section.website-reference .col-xs-7 {width: 58.331%}
+section.website-reference .col-xs-6 {width: 50%;}
+section.website-reference .col-xs-5 {width: 41.662%}
+section.website-reference .col-xs-4 {width: 33.332%;}
+section.website-reference .col-xs-3 {width: 25%;}
+section.website-reference .col-xs-2 {width: 16.662%;}
+section.website-reference .col-xs-1 {width: 8.332%;}
+
+@media screen and (min-width: 768px) {
+	
+	section.website-reference .row {
+		margin-right: -40px;
+	}
+	
+	section.website-reference .col {
+		padding-right: 40px;
+	}
+		
+	section.website-reference .col-sm-11 {width: 91.662%}
+	section.website-reference .col-sm-10 {width: 83.332%;}
+	section.website-reference .col-sm-9 {width: 75%;}
+	section.website-reference .col-sm-8 {width: 66.662%;}
+	section.website-reference .col-sm-7 {width: 58.331%}
+	section.website-reference .col-sm-6 {width: 50%;}
+	section.website-reference .col-sm-5 {width: 41.662%}
+	section.website-reference .col-sm-4 {width: 33.332%;}
+	section.website-reference .col-sm-3 {width: 25%;}
+	section.website-reference .col-sm-2 {width: 16.662%;}
+	section.website-reference .col-sm-1 {width: 8.332%;}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	
+	section.website-reference .col-md-11 {width: 91.662%}
+	section.website-reference .col-md-10 {width: 83.332%;}
+	section.website-reference .col-md-9 {width: 75%;}
+	section.website-reference .col-md-8 {width: 66.662%;}
+	section.website-reference .col-md-7 {width: 58.331%}
+	section.website-reference .col-md-6 {width: 50%;}
+	section.website-reference .col-md-5 {width: 41.662%}
+	section.website-reference .col-md-4 {width: 33.332%;}
+	section.website-reference .col-md-3 {width: 25%;}
+	section.website-reference .col-md-2 {width: 16.662%;}
+	section.website-reference .col-md-1 {width: 8.332%;}
+	
+}
+
+@media screen and (min-width: 1280px) {
+	
+	section.website-reference .col-lg-11 {width: 91.662%}
+	section.website-reference .col-lg-10 {width: 83.332%;}
+	section.website-reference .col-lg-9 {width: 75%;}
+	section.website-reference .col-lg-8 {width: 66.662%;}
+	section.website-reference .col-lg-7 {width: 58.331%}
+	section.website-reference .col-lg-6 {width: 50%;}
+	section.website-reference .col-lg-5 {width: 41.662%}
+	section.website-reference .col-lg-4 {width: 33.332%;}
+	section.website-reference .col-lg-3 {width: 25%;}
+	section.website-reference .col-lg-2 {width: 16.662%;}
+	section.website-reference .col-lg-1 {width: 8.332%;}
+	
+}
+
+@media screen and (max-width: 1023px) {
+	section.website-reference .push-down-sm {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	section.website-reference .push-down-sm {
+		margin-bottom: 15px;
+	}
+}
+
+section.website-reference footer {
+	text-align: center;
+	font-size: 85%;
+	color: #FFF;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+section.website-reference .row:before,
+section.website-reference .row:after,
+section.website-reference .group:before,
+section.website-reference .group:after {
+	content: "";
+	display: table;
+}
+
+section.website-reference.row:after,
+section.website-reference .group:after {
+	clear: both;
+}
+
+section.website-reference .row,
+section.website-reference .group {
+	zoom: 1;
+}
