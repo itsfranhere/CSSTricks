@@ -147,3 +147,7 @@ View Live Example [here](http://itsfranhere.github.io/CSSTricks/#/wbref2)
 	The second one is going to reverse the cycle or alternate the duration.
 	
 View Live Example [here](http://itsfranhere.github.io/CSSTricks/#/wbref3)
+
+![CssTricksPresentation](http://i.imgur.com/zqq810I.png)
+
+View whole Presentation [here](http://itsfranhere.github.io/CSSTricks)
